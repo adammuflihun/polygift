@@ -1,5 +1,6 @@
-// import { gsap } from 'gsap';
+import { gsap } from 'gsap';
 
 export const gsapHome = () => {
-  console.log('ancol');
+  console.log(gsap);
+  // console.log('ancl');
 };
