@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@finsweet/ts-utils": "^0.37.1",
+    "fullpage.js": "^4.0.15",
     "gsap": "^3.11.3"
   }
 }
