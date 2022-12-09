@@ -97,7 +97,7 @@ export const gsapHome = () => {
   // wrap gallery
   gsap.from('.item-img-gallery', 2.5, {
     scrollTrigger: {
-      trigger: '.wrap-img-gallery',
+      trigger: '.section-colored-dark:nth-child(1)',
       start: 'top 100%',
       end: '0% 100%',
       // markers: true,
@@ -122,7 +122,7 @@ export const gsapHome = () => {
       const words = $(this).find('.word');
       gsap.from(words, 1.5, {
         scrollTrigger: {
-          trigger: this,
+          trigger: '.section-colored-dark:nth-child(1)',
           start: 'top 100%',
           end: '0% 100%',
           // markers: true,
