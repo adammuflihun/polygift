@@ -14,5 +14,5 @@ window.Webflow.push(() => {
 });
 
 $(document).ready(function () {
-  $('head').append("<link rel='stylesheet' href='http://localhost:3000/index.css'>");
+  $('head').append("<link rel='stylesheet' href='https://polygift.vercel.app/dist/index.css'>");
 });
