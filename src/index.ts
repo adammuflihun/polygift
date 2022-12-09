@@ -7,7 +7,7 @@ import { scrollTo } from '$utils/scrollTo';
 window.Webflow ||= [];
 window.Webflow.push(() => {
   gsapHome();
-  // fullPage();
+  fullPage();
   // scrollTo();
 });
 
