@@ -28,33 +28,3 @@
   overflow: hidden;
   height: 100vh;
 }
-
-body {
-  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6391538db8bb215c54d65e7b_cursor.svg'),
-    auto !important;
-}
-
-/*Here we apply the hover state cursor to elements that are not links */
-.cursor-hover:hover {
-  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6391538db8bb215c54d65e7b_cursor.svg'),
-    auto !important;
-}
-
-a:hover,
-.title-unique:hover {
-  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6392e4ee8774f66ffc512c13_explore.svg'),
-    auto !important;
-  transform-origin: center;
-}
-
-.title-explore:hover {
-  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6392e4ed514f6b4797423452_now.svg'),
-    auto !important;
-  transform-origin: center;
-}
-
-.navlink:hover,
-.nav-footer:hover {
-  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6391538db8bb215c54d65e7b_cursor.svg'),
-    auto !important;
-}
