@@ -16,20 +16,16 @@ export const gsapHome = () => {
       let line = textInstance.find('.word-line');
       let word = $(this).find('.word');
 
-      gsap.to(word, {
-        scrollTrigger: {
-          trigger: '.trigger-0',
-          start: 'top 1rem',
-          end: 'top 1rem',
-
-          toggleActions: 'play none reverse none',
-        },
+      gsap.from(word, {
+        // scrollTrigger: {
+        //   trigger: '.title-unique',
+        //   start: 'top 1rem',
+        //   end: 'top 1rem',
+        //   toggleActions: 'play none reverse none',
+        // },
         y: '2rem',
         opacity: 0,
         duration: 0.05,
-
-        // stagger: 0.05,
-
         ease: 'expo.out',
       });
     });
