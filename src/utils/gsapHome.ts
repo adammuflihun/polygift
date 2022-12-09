@@ -15,6 +15,7 @@ export const gsapHome = () => {
       const chars = $(this).find('.char');
       tl.from(chars, 2.5, {
         y: '8rem',
+        autoAlpha: 0,
         opacity: 0,
         stagger: {
           each: 0.1,
@@ -38,6 +39,7 @@ export const gsapHome = () => {
         2,
         {
           y: '8rem',
+          autoAlpha: 0,
           opacity: 0,
           stagger: {
             each: 0.08,
@@ -63,6 +65,7 @@ export const gsapHome = () => {
     {
       y: '-4rem',
       opacity: 0,
+      autoAlpha: 0,
       stagger: {
         each: 0.08,
         from: 'start',
@@ -80,6 +83,7 @@ export const gsapHome = () => {
     {
       y: '4rem',
       opacity: 0,
+      autoAlpha: 0,
       stagger: {
         each: 0.08,
         from: 'start',
@@ -101,6 +105,7 @@ export const gsapHome = () => {
     },
     y: '4rem',
     opacity: 0,
+    autoAlpha: 0,
     stagger: {
       each: 0.3,
     },
@@ -125,6 +130,7 @@ export const gsapHome = () => {
         },
         y: '8rem',
         opacity: 0,
+        autoAlpha: 0,
         stagger: {
           each: 0.05,
         },
