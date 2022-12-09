@@ -1,7 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
-import Styles from 'src/styles/globalStyles';
 
 export const gsapHome = () => {
   gsap.registerPlugin(ScrollTrigger);

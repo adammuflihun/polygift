@@ -1,3 +1,5 @@
+import Styles from 'src/styles/globalStyles';
+
 import { fullPage } from '$utils/fullPage';
 import { gsapHome } from '$utils/gsapHome';
 import { scrollTo } from '$utils/scrollTo';
