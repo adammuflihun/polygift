@@ -1,6 +1,7 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import Styles from 'src/styles/globalStyles';
 
 export const gsapHome = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -95,24 +96,30 @@ export const gsapHome = () => {
   // supported-text-headline
 
   // wrap gallery
-  gsap.from('.item-img-gallery', 2.5, {
-    scrollTrigger: {
-      trigger: '.section-colored-dark:nth-child(1)',
-      start: 'top 100%',
-      end: '0% 100%',
-      // markers: true,
-      toggleActions: 'play none reverse none',
+  tl.from(
+    '.item-img-gallery',
+    2.5,
+    {
+      // scrollTrigger: {
+      //   trigger: '.section-colored-dark:nth-child(1)',
+      //   start: 'top 100%',
+      //   end: '0% 100%',
+      //   // markers: true,
+      //   toggleActions: 'play none reverse none',
+      // },
+      y: '4rem',
+      opacity: 0,
+      autoAlpha: 0,
+      stagger: {
+        each: 0.3,
+      },
+      ease: 'Expo.easeOut',
     },
-    y: '4rem',
-    opacity: 0,
-    autoAlpha: 0,
-    stagger: {
-      each: 0.3,
-    },
-    ease: 'Expo.easeOut',
-  });
+    2
+  );
   // wrap gallery
 
+  // Title unique 2
   let addAnimation3 = function () {
     $('.title-unique2').each(function (index) {
       const text = new SplitType($(this), {
@@ -120,25 +127,27 @@ export const gsapHome = () => {
         lineClass: 'word-line',
       });
       const words = $(this).find('.word');
-      gsap.from(words, 1.5, {
-        scrollTrigger: {
-          trigger: '.section-colored-dark:nth-child(1)',
-          start: 'top 100%',
-          end: '0% 100%',
-          // markers: true,
-          toggleActions: 'play none none none',
+      tl.from(
+        words,
+        1.5,
+        {
+          // scrollTrigger: {
+          //   trigger: '.section-colored-dark:nth-child(1)',
+          //   // markers: true,
+          //   toggleActions: 'play none none none',
+          // },
+          y: '8rem',
+          opacity: 0,
+          autoAlpha: 0,
+          stagger: {
+            each: 0.05,
+          },
+          ease: 'Expo.easeOut',
         },
-        y: '8rem',
-        opacity: 0,
-        autoAlpha: 0,
-        stagger: {
-          each: 0.05,
-        },
-        ease: 'Expo.easeOut',
-      });
+        2.8
+      );
     });
   };
   addAnimation3();
-
-  // wrap gallery
+  // Title unique 2
 };
