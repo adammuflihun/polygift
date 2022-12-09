@@ -162,6 +162,11 @@ export const gsapHome = () => {
       const chars = $(this).find('.char');
       console.log(this);
       gsap.from(chars, 2.5, {
+        scrollTrigger: {
+          trigger: '.title-explore',
+          // markers: true,
+          toggleActions: 'restart none none none',
+        },
         y: '8rem',
         autoAlpha: 0,
         opacity: 0,
