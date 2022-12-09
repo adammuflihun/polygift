@@ -1,10 +1,12 @@
 import { fullPage } from '$utils/fullPage';
 import { gsapHome } from '$utils/gsapHome';
+import { scrollTo } from '$utils/scrollTo';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
   gsapHome();
   fullPage();
+  // scrollTo();
 });
 
 $(document).ready(function () {

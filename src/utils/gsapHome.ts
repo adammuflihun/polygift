@@ -151,7 +151,8 @@ export const gsapHome = () => {
   addAnimation3();
   // Title unique 2
 
-  //title-explore
+  // Title explore
+
   let addAnimation5 = function () {
     $('.title-explore').each(function (index) {
       const text = new SplitType($(this), {
@@ -162,11 +163,6 @@ export const gsapHome = () => {
       console.log(this);
       gsap.from(chars, 2.5, {
         y: '8rem',
-        scrollTrigger: {
-          trigger: '.title-explore',
-          // markers: true,
-          toggleActions: 'restart none restart none',
-        },
         autoAlpha: 0,
         opacity: 0,
         stagger: {
@@ -178,5 +174,5 @@ export const gsapHome = () => {
   };
 
   addAnimation5();
-  //title-explore
+  // Title explore
 };
