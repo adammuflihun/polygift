@@ -47,6 +47,12 @@ a:hover,
   transform-origin: center;
 }
 
+.title-explore:hover {
+  cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6392e4ed514f6b4797423452_now.svg'),
+    auto !important;
+  transform-origin: center;
+}
+
 .nav-footer:hover {
   cursor: url('https://uploads-ssl.webflow.com/638ff4adecf6e1befea053ac/6391538db8bb215c54d65e7b_cursor.svg'),
     auto !important;
