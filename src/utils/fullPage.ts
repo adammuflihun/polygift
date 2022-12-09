@@ -2,9 +2,11 @@ import { gsap } from 'gsap';
 import SplitType from 'split-type';
 
 export const fullPage = () => {
-  const pageFull = new fullpage('#fullpage', {
-    //options here
+  new fullpage('#fullpage', {
+    licenseKey: 'YOUR_KEY_HERE',
     autoScrolling: true,
     scrollHorizontally: true,
+    credits: { enabled: false, label: '', position: 'right' },
   });
+  console.log('fullpage');
 };
