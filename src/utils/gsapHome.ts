@@ -5,7 +5,7 @@ import SplitType from 'split-type';
 export const gsapHome = () => {
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
-  // gsap.to('.title-unique', { autoAlpha: 1 });
+  // gsap.set('.title-unique', { autoAlpha: 0 });
 
   //title text 1
 
