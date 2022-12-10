@@ -27,6 +27,30 @@ export const fullPage = () => {
         $('.fixed-2').css('opacity', '0');
         $('.fixed-3').css('opacity', '1');
       }
+      if (destination.index == 6) {
+        $('.fixed-3').css('opacity', '1');
+        $('.fixed-4').css('opacity', '0');
+      }
+      if (destination.index == 7) {
+        $('.fixed-3').css('opacity', '0');
+        $('.fixed-4').css('opacity', '1');
+      }
+      if (destination.index == 8) {
+        $('.fixed-4').css('opacity', '1');
+        $('.fixed-5').css('opacity', '0');
+      }
+      if (destination.index == 9) {
+        $('.fixed-5').css('opacity', '1');
+        $('.fixed-6').css('opacity', '0');
+      }
+      if (destination.index == 10) {
+        $('.fixed-5').css('opacity', '0');
+        $('.fixed-6').css('opacity', '1');
+      }
+      if (destination.index == 11) {
+        $('.fixed-6').css('opacity', '0');
+        $('.fixed-7').css('opacity', '1');
+      }
     },
     //responsiveWidth: 480,
     licenseKey: '6A0A57E3-ADC34D84-A91F6D3E-392746EE',
