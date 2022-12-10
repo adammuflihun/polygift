@@ -183,25 +183,5 @@ export const gsapHome = () => {
   // gsap fixed change
   // fixed-2
 
-  gsap.from(
-    '.fixed-2',
-    1,
-    {
-      scrollTrigger: {
-        trigger: '#fixed-2',
-        // markers: true,
-        toggleActions: 'play none none none',
-      },
-      y: '-4rem',
-      opacity: 0,
-      autoAlpha: 0,
-      stagger: {
-        each: 0.08,
-        from: 'start',
-      },
-      ease: 'Expo.easeOut',
-    },
-    1.2
-  );
   // fixed-2
 };
