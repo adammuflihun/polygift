@@ -5,7 +5,10 @@ import SplitType from 'split-type';
 export const gsapHome = () => {
   gsap.registerPlugin(ScrollTrigger);
   const tl = gsap.timeline();
+  gsap.to('.title-unique', { autoAlpha: 1 });
+
   //title text 1
+
   let addAnimation = function () {
     $('.title-unique:nth-child(1)').each(function (index) {
       const text = new SplitType($(this), {
@@ -13,15 +16,24 @@ export const gsapHome = () => {
         lineClass: 'word-line',
       });
       const chars = $(this).find('.char');
-      tl.from(chars, 2.5, {
-        y: '8rem',
-        autoAlpha: 0,
-        opacity: 0,
-        stagger: {
-          each: 0.1,
+      tl.fromTo(
+        chars,
+        2.5,
+        {
+          autoAlpha: 0,
+          opacity: 0,
+          y: '8rem',
         },
-        ease: 'Expo.easeOut',
-      });
+        {
+          y: '0rem',
+          autoAlpha: 1,
+          opacity: 1,
+          stagger: {
+            each: 0.1,
+          },
+          ease: 'Expo.easeOut',
+        }
+      );
     });
   };
   //title text 1
