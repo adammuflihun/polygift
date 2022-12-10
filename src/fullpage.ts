@@ -11,6 +11,6 @@ window.Webflow.push(() => {
   // scrollTo();
 });
 
-// $(document).ready(function () {
-//   $('head').append("<link rel='stylesheet' href='http://localhost:3000/index.css'>");
-// });
+$(document).ready(function () {
+  $('head').append("<link rel='stylesheet' href='http://localhost:3000/index.css'>");
+});
