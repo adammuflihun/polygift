@@ -12,8 +12,20 @@ export const fullPage = () => {
       var origin = this;
 
       //using index
+      if (destination.index == 2) {
+        $('.fixed-2').css('opacity', '0');
+      }
+
       if (destination.index == 3) {
         $('.fixed-2').css('opacity', '1');
+      }
+      if (destination.index == 4) {
+        $('.fixed-3').css('opacity', '0');
+        $('.fixed-2').css('opacity', '1');
+      }
+      if (destination.index == 5) {
+        $('.fixed-2').css('opacity', '0');
+        $('.fixed-3').css('opacity', '1');
       }
     },
     //responsiveWidth: 480,
