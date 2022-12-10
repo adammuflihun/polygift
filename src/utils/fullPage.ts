@@ -6,11 +6,9 @@ export const fullPage = () => {
     css3: false,
     scrollingSpeed: 700,
     // scrollBar: true,
-    // lockAnchors: false,
+    lockAnchors: false,
+    //responsiveWidth: 480,
     licenseKey: '6A0A57E3-ADC34D84-A91F6D3E-392746EE',
-    autoScrolling: true,
-    scrollHorizontally: true,
-    // credits: { enabled: false, label: '', position: 'right' },
   });
   console.log('fullpage');
 };
