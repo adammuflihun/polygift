@@ -40,16 +40,23 @@ export const fullPage = () => {
         $('.fixed-5').css('opacity', '0');
       }
       if (destination.index == 9) {
+        $('.fixed-4').css('opacity', '0');
+        $('.fixed-5').css('opacity', '1');
+      }
+      if (destination.index == 10) {
         $('.fixed-5').css('opacity', '1');
         $('.fixed-6').css('opacity', '0');
       }
-      if (destination.index == 10) {
+      if (destination.index == 11) {
         $('.fixed-5').css('opacity', '0');
         $('.fixed-6').css('opacity', '1');
       }
-      if (destination.index == 11) {
-        $('.fixed-6').css('opacity', '0');
-        $('.fixed-7').css('opacity', '1');
+      if (destination.index == 12) {
+        $('.fixed-7').css('opacity', '0');
+        $('.fixed-6').css('opacity', '1');
+      }
+      if (destination.index == 13) {
+        $('.fixed-6').css('opacity', '1');
       }
     },
     //responsiveWidth: 480,
