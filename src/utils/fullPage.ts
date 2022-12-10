@@ -12,6 +12,9 @@ export const fullPage = () => {
       var origin = this;
 
       //using index
+      if (destination.index == 1) {
+        $('.fixed-1').css('opacity', '1');
+      }
       if (destination.index == 2) {
         $('.fixed-2').css('opacity', '0');
         $('.fixed-6').css('opacity', '0');
