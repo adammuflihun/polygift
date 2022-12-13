@@ -11,7 +11,7 @@ window.Webflow.push(() => {
   // First, check if the browser supports media queries
   if ('matchMedia' in window) {
     // Create a media query
-    const query = window.matchMedia('(min-width: 900px)');
+    const query = window.matchMedia('(min-width: 780px)');
 
     // Add a listener to the media query
     query.addListener(handleMatch);
