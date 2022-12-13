@@ -7,8 +7,18 @@ import { scrollTo } from '$utils/scrollTo';
 window.Webflow ||= [];
 window.Webflow.push(() => {
   gsapHome();
-  fullPage();
-  // scrollTo();
+  // fullPage();
+
+  function myFunction() {
+    // This function will be run every time the window size is changed
+    // Put your code here...
+
+    if (navigator.userAgent.match(/Desktop/i)) {
+      fullPage();
+    }
+  }
+
+  window.addEventListener('resize', myFunction);
 });
 
 // $(document).ready(function () {
