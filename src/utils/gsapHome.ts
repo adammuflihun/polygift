@@ -159,7 +159,7 @@ export const gsapHome = () => {
       );
     });
   };
-  addAnimation3();
+  // addAnimation3();
   // Title unique 2
 
   // Title explore
