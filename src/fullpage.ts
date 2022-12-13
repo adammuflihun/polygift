@@ -7,20 +7,30 @@ import { scrollTo } from '$utils/scrollTo';
 window.Webflow ||= [];
 window.Webflow.push(() => {
   gsapHome();
-  // fullPage();
 
-  function myFunction() {
-    // This function will be run every time the window size is changed
-    // Put your code here...
+  // First, check if the browser supports media queries
+  if ('matchMedia' in window) {
+    // Create a media query
+    const query = window.matchMedia('(min-width: 900px)');
 
-    if (navigator.userAgent.match(/Desktop/i)) {
-      fullPage();
-    }
+    // Add a listener to the media query
+    query.addListener(handleMatch);
+
+    // Call the listener function initially, in case the viewport is already at 900px or above
+    handleMatch(query);
   }
 
-  window.addEventListener('resize', myFunction);
+  // This function will be called whenever the viewport width matches or changes from the media query
+  function handleMatch(query) {
+    if (query.matches) {
+      fullPage();
+    } else {
+      // The viewport is less than 900px, so we don't want to run the JavaScript
+    }
+  }
 });
 
+console.log('oke');
 // $(document).ready(function () {
 //   $('head').append("<link rel='stylesheet' href='http://localhost:3000/index.css'>");
 // });
