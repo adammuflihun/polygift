@@ -32,3 +32,7 @@
 h1 {
   visibility: hidden;
 }
+
+.w-nav-overlay {
+  top: 0;
+}
